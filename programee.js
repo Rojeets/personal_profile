@@ -13,7 +13,7 @@ function Positive(){
 }
 function VS() {
     var newPage = window.open('', 'VS code on android');
-    newPage.document.write("<h1>Vs-codeode (code-server)</h1>")
+    newPage.document.write("<h1>Vs-code (code-server)</h1>")
     newPage.document.write("<pre>1.Install termux\n2.run command 'termux-setup-storage'\n3.run command'pkg update && upgrade'\n4.Run command'pkg install tur-repo'\n5.Run command 'pkg install code-server'</pre> ");
     newPage.document.write("\n\n\nNote* Command can be only written below the sign  '~$'");
     newPage.document.write("(only of 38mb)");
