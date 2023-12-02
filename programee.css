@@ -1,0 +1,55 @@
+body{
+    background-color:black;
+}
+.top {
+    border-spacing:0%;
+    border-top-left-radius:100px;
+    background-image: url('/storage/dcim/facebook/key.jpg');
+    background-size:100%; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+    background-repeat: no-repeat;
+}
+.pg{
+    text-align :end;
+    font-size: large;
+    font-weight: bold;
+    font-style: italic;
+    border-top: 20px;
+    color : bisque;
+    width: 100%;
+    height: 100px;
+    border-radius:8px; 
+}
+.play-screen {
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    color: white;
+    animation: slideFromLeft 10s linear infinite; /* Adjust duration and timing function */
+}
+@keyframes slideFromLeft {
+       from {
+        transform: translateX(-60%);
+        }
+       to {
+        transform: translateX(60%);
+        }
+}
+.bck{
+    color:white;
+}
+.icon-container{
+    position:relative;
+}
+.icons{
+    position:absolute;
+    top:0px;
+    right:0px;
+    text-align: right;
+    width: 50px;
+    height: 50px;
+}
+button{
+    color: white;
+    background-color:black;
+}
