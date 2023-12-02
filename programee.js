@@ -1,6 +1,6 @@
 function OddEven() {
     var newPage = window.open('', 'Wap to find odd or even.');
-    var cCode = "#include '<stdio.h>'\nvoid main() {\n\tint number;\n\tprintf(\"Enter an integer: \");\n\tscanf(\"%d\", &number);\n\tif (number % 2 == 0) {\n\t\tprintf(\"%d is even.\\n\", number);\n\t} else {\n\t\tprintf(\"%d is odd.\\n\", number);\n\t}\n\n}";
+    var cCode = "#include \<stdio.h\>\nvoid main() {\n\tint number;\n\tprintf(\"Enter an integer: \");\n\tscanf(\"%d\", &number);\n\tif (number % 2 == 0) {\n\t\tprintf(\"%d is even.\\n\", number);\n\t} else {\n\t\tprintf(\"%d is odd.\\n\", number);\n\t}\n\n}";
     newPage.document.write("<h1>C Code:</h1>");
     newPage.document.write("<pre>" + cCode + "</pre>");
 }
