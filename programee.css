@@ -4,7 +4,7 @@ body{
 .top {
     border-spacing:0%;
     border-top-left-radius:100px;
-    background-image: url('https://p4.wallpaperbetter.com/wallpaper/257/682/351/keyboard-button-bw-enter-wallpaper-preview.jpg');
+    background-image: url('/storage/dcim/facebook/key.jpg');
     background-size:100%; /* Adjust as needed */
     background-position: center; /* Adjust as needed */
     background-repeat: no-repeat;
@@ -50,6 +50,8 @@ body{
     height: 50px;
 }
 button{
+    text-align: left;
+    font-size: x-large;
     color: white;
     background-color:black;
 }
