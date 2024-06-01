@@ -1,9 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rojit Pokharel</title>
     <style>
         * {
@@ -55,37 +57,25 @@
 
         .img {
             height: 500px;
-            width: auto;
             margin-top: 40px;
-            border: 1px solid ;
             border-radius: 5px;
             border-top-right-radius: 80px;
         }
 
-        #body {
-            width: 100%;
-            height: 80%;
-            display: inline;
+        .body {
+            padding: 3px;
+            display: inline-flex;
         }
 
-        #address {
-            margin-top: -10px;
-        }
-
-        .text {
-            margin-top: -50%;
-            margin-left: 40%;
-            margin-right: 10%;
+        #text {
             margin-bottom: 100px;
         }
 
         .jimmy {
-            background-color: lightgrey;
-            border: 1px solid lightgrey;
-            width: 180px;
             border-radius: 4px;
-            display: inline;
+            display: inline-block;
             height: 40px;
+            
         }
 
         .data {
@@ -95,8 +85,8 @@
         }
 
         .habbit {
+
             margin-top: 10px;
-            margin-left: -30px;
             margin-bottom: 30px;
         }
 
@@ -158,24 +148,28 @@
         #form {
             text-align: right;
         }
-        a{
+
+        a {
             color: black;
             text-decoration: none;
             margin-right: 4px;
         }
-        input{
+
+        input {
             border: 2px solid grey;
             height: 30px;
             display: inline-block;
         }
-        textarea{
+
+        textarea {
             display: flex;
             flex-direction: row;
             border: 2px solid grey;
             height: 200px;
             width: 50%;
         }
-        #a{
+
+        #a {
             background-color: lightgrey;
         }
     </style>
@@ -190,47 +184,49 @@
         <li class="li"><button class="nav" style="border-bottom-right-radius: 9px;">Help</button></li>
 
     </div>
+    <div class="body">
+        <div id="body">
+            <img class="img" src="project.jpg" alt="">
+            <h1 style="margin-top: -8px;">ROJIT POKHAREL</h1>
+            <h3 id="address">Dolakha,Nepal</h3>
+        </div>
+        <div id="text">
+            <div class="habbit">
+                <div class="jimmy" ><img class="data" src="jimmy.jpg" alt="">Dog lover <3
+                        </div>
+                        <div class="jimmy"><img src="temple.jpg" alt="" class="data">Religious</div>
+                        <div class="jimmy"><img src="nature.jpg" alt="" class="data">Nature </div>
+                        <div class="jimmy"><img src="motoheart.jpg" alt="" class="data">Motohearted</div>
+                        <div class="jimmy"><img src="swan.jpg" alt="" class="data">Explorer</div>
+                </div><br>
+                <h2 id="profile">ABOUT ME</h2>
+                <p>Hi, I am Rojit Pokharel from Dolakha, Nepal.
+                    I have been student of Computer Science in High school .
+                    I am interested in web development and machine learning.
+                    I am a beginner in programming and trying to learn new things every day.
 
-    <div id="body">
-        <img class="img" src="project.jpg" alt="">
-        <h1 style="margin-top: -8px;">ROJIT POKHAREL</h1>
-        <h3 id="address">Dolakha,Nepal</h3>
-    </div>
-    <div class="text">
-        <div class="habbit">
-            <div class="jimmy" style="margin-left: -20px;"><img class="data" src="jimmy.jpg" alt="">Dog lover <3 </div>
-                    <div class="jimmy"><img src="temple.jpg" alt="" class="data">Religious</div>
-                    <div class="jimmy"><img src="nature.jpg" alt="" class="data">Nature </div>
-                    <div class="jimmy"><img src="motoheart.jpg" alt="" class="data">Motohearted</div>
-                    <div class="jimmy"><img src="swan.jpg" alt="" class="data">Explorer</div>
-            </div><br>
-            <h2 id="profile">ABOUT ME</h2>
-            <p>Hi, I am Rojit Pokharel from Dolakha, Nepal.
-                I have been student of Computer Science in High school .
-                I am interested in web development and machine learning.
-                I am a beginner in programming and trying to learn new things every day.
-
-            </p>
-            <h2 id="profile">THINGS I LIKE</h2>
-            <ul id="things">
-                <li>Learning rather than studying.</li>
-                <li>Exploring rather than researching.</li>
-                <li>Listening rather than talking.</li>
-                <li>Wise rather than knowledged.</li>
-                <li>Skilled rather than educated.</li>
-                <li>Soft music, Dark room, Deem light. </li>
-                <li>Black getup, Classic and Humble behaviour, Simplicity.</li>
-                <li>Living things including
-                    microbes to wildlife.
-                </li>
-            </ul>
-            <h2 id="profile">HOBBIES</h2>
-            <ul id="hobbies">
-                <li>Exploring, Learning, Traveling, Adventure</li>
-                <li> To be Managed and Passionated.</li>
-                <li>To be known by works.</li>
-                <li>To be Inspiration.</li>
-            </ul>
+                </p>
+                <h2 id="profile">THINGS I LIKE</h2>
+                <ul id="things">
+                    <li>Learning rather than studying.</li>
+                    <li>Exploring rather than researching.</li>
+                    <li>Listening rather than talking.</li>
+                    <li>Wise rather than knowledged.</li>
+                    <li>Skilled rather than educated.</li>
+                    <li>Soft music, Dark room, Deem light. </li>
+                    <li>Black getup, Classic and Humble behaviour, Simplicity.</li>
+                    <li>Living things including
+                        microbes to wildlife.
+                    </li>
+                </ul>
+                <h2 id="profile">HOBBIES</h2>
+                <ul id="hobbies">
+                    <li>Exploring, Learning, Traveling, Adventure</li>
+                    <li> To be Managed and Passionated.</li>
+                    <li>To be known by works.</li>
+                    <li>To be Inspiration.</li>
+                </ul>
+            </div>
         </div>
         <hr>
         <div class="tables">
@@ -332,6 +328,5 @@
             </a>
         </footer>
 </body>
-
-
 </html>
+
