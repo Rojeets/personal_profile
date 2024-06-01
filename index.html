@@ -1,10 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rojit Pokharel</title>
     <style>
@@ -19,7 +17,6 @@
             background-color: lightgrey;
             border: 2px solid lightgrey;
             width: 100%;
-            margin-left: -10px;
             margin-top: 13px;
             border-top-left-radius: 9px;
             border-top-right-radius: 9px;
@@ -33,12 +30,10 @@
         .nav {
             transition-duration: 0.4s;
             cursor: pointer;
-            display: inline-block;
             padding: 10px;
             width: 120px;
             border: 5px solid rgb(219, 216, 216);
             background-color: white;
-            margin-left: -20px;
         }
 
         .nav:hover {
@@ -47,14 +42,10 @@
         }
 
         #profile {
-            background-color: rgb(219, 216, 216);
-            width: 100%;
-            display: inline;
-            margin-right: 40px;
+            background-color: lightgrey;
             font-size: larger;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         }
-
         .img {
             height: 500px;
             margin-top: 40px;
@@ -62,20 +53,22 @@
             border-top-right-radius: 80px;
         }
 
-        .body {
+        .body{
             padding: 3px;
             display: inline-flex;
         }
-
         #text {
+            margin-top: 40px;
+            margin-left: 30px;
             margin-bottom: 100px;
         }
 
         .jimmy {
+            background-color: lightgrey;
+            border: 1px solid lightgrey;
             border-radius: 4px;
-            display: inline-block;
+            display: inline;
             height: 40px;
-            
         }
 
         .data {
@@ -85,8 +78,8 @@
         }
 
         .habbit {
-
             margin-top: 10px;
+            margin-left: 30px;
             margin-bottom: 30px;
         }
 
@@ -148,28 +141,24 @@
         #form {
             text-align: right;
         }
-
-        a {
+        a{
             color: black;
             text-decoration: none;
             margin-right: 4px;
         }
-
-        input {
+        input{
             border: 2px solid grey;
             height: 30px;
             display: inline-block;
         }
-
-        textarea {
+        textarea{
             display: flex;
             flex-direction: row;
             border: 2px solid grey;
             height: 200px;
             width: 50%;
         }
-
-        #a {
+        #a{
             background-color: lightgrey;
         }
     </style>
@@ -177,7 +166,7 @@
 
 <body>
     <div class="navbar">
-        <li type="none" id="profile">PROFILE</li>
+        <li type="none" id="profile" class="li">PROFILE</li>
         <li class="li"><button class="nav" style=" margin-left: 30%; border-top-left-radius: 9px;">Home</button></li>
         <li class="li"><button class="nav">About</button></li>
         <li class="li"><button class="nav">contact</button></li>
@@ -185,49 +174,68 @@
 
     </div>
     <div class="body">
-        <div id="body">
-            <img class="img" src="project.jpg" alt="">
-            <h1 style="margin-top: -8px;">ROJIT POKHAREL</h1>
-            <h3 id="address">Dolakha,Nepal</h3>
-        </div>
-        <div id="text">
-            <div class="habbit">
-                <div class="jimmy" ><img class="data" src="jimmy.jpg" alt="">Dog lover <3
-                        </div>
-                        <div class="jimmy"><img src="temple.jpg" alt="" class="data">Religious</div>
-                        <div class="jimmy"><img src="nature.jpg" alt="" class="data">Nature </div>
-                        <div class="jimmy"><img src="motoheart.jpg" alt="" class="data">Motohearted</div>
-                        <div class="jimmy"><img src="swan.jpg" alt="" class="data">Explorer</div>
-                </div><br>
-                <h2 id="profile">ABOUT ME</h2>
-                <p>Hi, I am Rojit Pokharel from Dolakha, Nepal.
-                    I have been student of Computer Science in High school .
-                    I am interested in web development and machine learning.
-                    I am a beginner in programming and trying to learn new things every day.
-
-                </p>
-                <h2 id="profile">THINGS I LIKE</h2>
-                <ul id="things">
-                    <li>Learning rather than studying.</li>
-                    <li>Exploring rather than researching.</li>
-                    <li>Listening rather than talking.</li>
-                    <li>Wise rather than knowledged.</li>
-                    <li>Skilled rather than educated.</li>
-                    <li>Soft music, Dark room, Deem light. </li>
-                    <li>Black getup, Classic and Humble behaviour, Simplicity.</li>
-                    <li>Living things including
-                        microbes to wildlife.
-                    </li>
-                </ul>
-                <h2 id="profile">HOBBIES</h2>
-                <ul id="hobbies">
-                    <li>Exploring, Learning, Traveling, Adventure</li>
-                    <li> To be Managed and Passionated.</li>
-                    <li>To be known by works.</li>
-                    <li>To be Inspiration.</li>
-                </ul>
+    <div id="body">
+        <img class="img" src="project.jpg" alt="">
+        <h1 style="margin-top: -8px;">ROJIT POKHAREL</h1>
+        <h3 id="address">Dolakha,Nepal</h3>
+        <div class="habbit">
+            <div class="jimmy" style="margin-left: -20px;"><img class="data" src="jimmy.jpg" alt="">Dog lover <3 </div>
+                    <div class="jimmy"><img src="temple.jpg" alt="" class="data">Religious</div>
+                    <div class="jimmy"><img src="nature.jpg" alt="" class="data">Nature </div>
+                    <div class="jimmy"><img src="motoheart.jpg" alt="" class="data">Motohearted</div>
+                    <div class="jimmy"><img src="swan.jpg" alt="" class="data">Explorer</div>
             </div>
+    </div>
+    <div id="text">
+        <br>
+            <h2 id="profile">ABOUT ME</h2>
+            <p>Hi, I am Rojit Pokharel from Dolakha, Nepal.
+                I have been student of Computer Science in High school .
+                I am interested in web development and machine learning.
+                I am a beginner in programming and trying to learn new things every day.
+
+            </p>
+            <h2 id="profile">THINGS I LIKE</h2>
+            <ul id="things">
+                <li>Learning rather than studying.</li>
+                <li>Exploring rather than researching.</li>
+                <li>Listening rather than talking.</li>
+                <li>Wise rather than knowledged.</li>
+                <li>Skilled rather than educated.</li>
+                <li>Soft music, Dark room, Deem light. </li>
+                <li>Black getup, Classic and Humble behaviour, Simplicity.</li>
+                <li>Living things including
+                    microbes to wildlife.
+                </li>
+            </ul>
+            <h2 id="profile">HOBBIES</h2>
+            <ul id="hobbies">
+                <li>Exploring, Learning, Traveling, Adventure</li>
+                <li> To be Managed and Passionated.</li>
+                <li>To be known by works.</li>
+                <li>To be Inspiration.</li>
+            </ul>
+            <h2 id="profile">WHAT I NEED TO KNOW</h2>
+            <ul id="what_i_know">
+                <li>
+                    HTML, CSS, JavaScript, PHP, SQL, Python, Java, C++, C#.
+                </li>
+                <li>
+                    Web development, Machine learning, Data analysis, Data visualization.
+                </li>
+                <li>
+                    Operating System, Networking, Database management system.
+                </li>
+                <li>
+                    Problem solving, Algorithm, Data structure.
+                </li>
+                <li>
+                    Git, GitHub, Visual Studio Code, Sublime Text, Atom.
+                </li>
+                
+            </ul>
         </div>
+    </div>
         <hr>
         <div class="tables">
             <table>
@@ -328,5 +336,6 @@
             </a>
         </footer>
 </body>
-</html>
 
+
+</html>
