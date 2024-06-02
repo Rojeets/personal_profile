@@ -1,345 +1,173 @@
-<!DOCTYPE html>
-<html lang="en">
+* {
+    margin-left: 10px;
+    background-color: whitesmoke;
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rojit Pokharel</title>
-    <style>
-        * {
-            margin-left: 10px;
-            background-color: whitesmoke;
-
-        }
-        body{
-            display: block;
-        }
-
-        #profile {
-            background-color: lightgrey;
-            font-size: larger;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        }
-
-        .navbar {
-            display: inline-block;
-            padding: 3px;
-            background-color: lightgrey;
-            border: 2px solid lightgrey;
-            width: 100%;
-            margin-top: 13px;
-            border-top-left-radius: 9px;
-            border-top-right-radius: 9px;
-        }
-
-        .navelements {
-            display: inline-block;
-            background-color: lightgrey;
-        }
-
-        .navbutton {
-            transition-duration: 0.4s;
-            cursor: pointer;
-            padding: 10px;
-            width: 120px;
-            border: 5px solid rgb(219, 216, 216);
-            background-color: white;
-        }
-
-        .navbutton:hover {
-            background-color: lightblue;
-            color: white;
-        }
-
-        .mainimg {
-            height: 500px;
-            margin-top: 40px;
-            border-radius: 5px;
-            border-top-right-radius: 80px;
-        }
-
-        .content {
-            padding: 3px;
-            display: inline-flex;
-        }
-
-        .jimmy {
-            background-color: lightgrey;
-            border: 1px solid lightgrey;
-            border-radius: 4px;
-            display: inline;
-            height: 0px;
-            padding: 14px;
-        }
-
-        .data {
-            border-radius: 50%;
-            background-color: lightgrey;
-            width: 30px;
-        }
-
-        .habbit {
-            margin-top: 10px;
-            margin-left: 30px;
-            margin-bottom: 30px;
-            display: block;
-        }
-
-        footer {
-            padding: 3px;
-            background-color: lightgrey;
-            border: 2px solid lightgrey;
-            width: 100%;
-            height: 50px;
-            margin-left: -10px;
-            margin-bottom: -10px;
-            border-bottom-left-radius: 9px;
-            border-bottom-right-radius: 9px;
-            text-align: center;
-        }
-
-        .tables {
-            width: 90%;
-            margin-left: 40px;
-        }
-
-        table {
-            display: inline;
-            padding: 3px;
-            margin-left: 90px;
-        }
-
-        th {
-            text-align: left;
-            border-bottom: 1px solid lightgrey;
-            border-left: 1px solid lightgrey;
-            border-right: 1px solid lightgrey;
-            border-top: 1px solid lightgrey;
-        }
-
-        .sub {
-            border: none;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        td {
-            border-bottom: 1px solid lightgrey;
-            border-left: 1px solid lightgrey;
-            border-right: 1px solid lightgrey;
-        }
-
-        .form {
-            border: 2px solid lightgrey;
-            margin-left: 5%;
-            width: 90%;
-            margin-bottom: 20px;
-        }
-
-        form {
-            text-align: left;
-        }
-
-        #form {
-            text-align: right;
-        }
-
-        a {
-            color: black;
-            text-decoration: none;
-            margin-right: 4px;
-        }
-
-        input {
-            border: 2px solid grey;
-            height: 30px;
-            display: inline-block;
-        }
-
-        textarea {
-            display: flex;
-            flex-direction: row;
-            border: 2px solid grey;
-            height: 200px;
-            width: 50%;
-        }
-
-        #a {
-            background-color: lightgrey;
-        }
-    </style>
-</head>
-
-<body>
-    <div class="navbar">
-        <li type="none" id="profile" class="navelements">PROFILE</li>
-        <li class="navelements"><button class="navbutton">Home</button></li>
-        <li class="navelements"><button class="navbutton">About</button></li>
-        <li class="navelements"><button class="navbutton">contact</button></li>
-        <li class="navelements"><button class="navbutton" style="border-bottom-right-radius: 9px;">Help</button></li>
-
-    </div>
-    <div class="content">
-        <div id="column1">
-            <img class="mainimg" src="project.jpg" alt="">
-            <h1 style="margin-top: -8px;">ROJIT POKHAREL</h1>
-            <h3 id="address">Dolakha,Nepal</h3>
-            <div class="habbit">
-                <div class="jimmy"><img src="jimmy.jpg" alt="" class="data">Dog lover <3 </div>
-                <div class="jimmy"><img src="temple.jpg" alt="" class="data">Religious</div>
-                <div class="jimmy"><img src="nature.jpg" alt="" class="data">Nature </div>
-                <div class="jimmy"><img src="motoheart.jpg" alt="Motohearted.jpg" class="data">Motohearted</div>
-                <div class="jimmy"><img src="swan.jpg" alt="" class="data">Explorer</div>
-            </div>
-        </div>
-        <div id="column2">
-            <br>
-            <div id="about_me">
-                <h2 id="profile">ABOUT ME</h2>
-                <p>
-                    Hi, I am Rojit Pokharel from Dolakha, Nepal.
-                    I have been student of Computer Science in High school .
-                    I am interested in web development and machine learning.
-                    I am a beginner in programming and trying to learn new things every day.
-
-                </p>
-            </div>
-            
-            <div id="THINGS I LIKE">
-                <h2 id="profile">THINGS I LIKE</h2>
-                <ul >
-                    <li>Learning rather than studying.</li>
-                    <li>Exploring rather than researching.</li>
-                    <li>Listening rather than talking.</li>
-                    <li>Wise rather than knowledged.</li>
-                    <li>Skilled rather than educated.</li>
-                    <li>Soft music, Dark room, Deem light. </li>
-                    <li>Black getup, Classic and Humble behaviour, Simplicity.</li>
-                    <li>Living things including microbes to wildlife.</li>
-                </ul>
-            </div>
-            <div id="hobbies">
-                <h2 id="profile">HOBBIES</h2>
-                <ul>
-                    <li>Exploring, Learning, Traveling, Adventure</li>
-                    <li> To be Managed and Passionated.</li>
-                    <li>To be known by works.</li>
-                    <li>To be Inspiration.</li>
-                </ul>
-            </div>
-            <div id="what_i_need_to_know">
-                <h2 id="profile">WHAT I NEED TO KNOW</h2>
-                <ul>
-                    <li>HTML, CSS, JavaScript, PHP, SQL, Python, Java, C++, C#.</li>
-                    <li>Web development, Machine learning, Data analysis, Data visualization.</li>
-                    <li>Operating System, Networking, Database management system.</li>
-                    <li>Problem solving, Algorithm, Data structure.</li>
-                    <li> Git, GitHub, Visual Studio Code, Sublime Text, Atom.</li>
-
-                </ul>
-            </div>
-        </div>
-        </div>
-        <hr>
-        <div class="tables">
-            <table>
-                <th class="sub">
-                    EDUCATION
-                </th>
-                <tr>
-                    <th>level</th>
-                    <th>Year</th>
-                </tr>
-                <tr>
-                    <td>SEE</td>
-                    <td>2022</td>
-                </tr>
-                <tr>
-                    <td>Higher <br>Secondary</td>
-                    <td>2024</td>
-                </tr>
-            </table>
-            <table>
-                <th class="sub">BOOKS</th>
-                <tr>
-                    <th>Name</th>
-                    <th>Author</th>
-                </tr>
-                <tr>
-                    <td>Muna Madan</td>
-                    <td>Laxmi Prasad <br>Devkota</td>
-                </tr>
-                <tr>
-                    <td>The <br> Alchemist</td>
-                    <td>Paulo Coelho</td>
-                </tr>
-            </table>
-            <table>
-                <th class="sub">SPORTS</th>
-                <tr>
-                    <th>Game</th>
-                    <th>Player</th>
-                </tr>
-                <tr>
-                    <td>Football</td>
-                    <td>Neymar .Jr</td>
-                </tr>
-                <tr>
-                    <td>Cricket</td>
-                    <td>Sachin <br>Tendulkar</td>
-                </tr>
-            </table>
-            <table>
-                <th class="sub">PLACES</th>
-                <tr>
-                    <th>Place</th>
-                    <th>District</th>
-                </tr>
-                <tr>
-                    <td>Sauraha</td>
-                    <td>Chitwan</td>
-                </tr>
-                <tr>
-                    <td>Kalinchowk</td>
-                    <td>Dolakha</td>
-                </tr>
-            </table>
-        </div>
-        <div class="form">
-            <form>
-                <h2>REVIEW/MESSAGE</h2>
-                <input type="text" name="name" placeholder="Name">
-                <input type="email" name="email" placeholder="Email"><br><br>
-                <textarea name="message" placeholder="Messages">
-                </textarea><br>
-                <br>
-                <input type="submit">
-            </form>
-            <ul id="form">
-                <li type="none"><a href="">Roj Eet</a> </li>
-                <li type="none">
-                    <a href="">+977-9844070204</a>
-                </li>
-                <li type="none">
-                    <a href="">pokharelrojit45@gmail.com </a>
-                </li>
+}
+body{
+    display: block;
+}
 
 
-            </ul>
-        </div>
+.navbar {
+    text-align: center;
+    padding: 3px;
+    background-color: lightgrey;
+    border: 2px solid lightgrey;
+    width: 100%;
+    margin-top: 13px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
 
-        <footer>
-            <a id="a" href="">
-                <li class="navelements"><img class="data" src="insta.jpg" alt=""></li>
-            </a>
-            <a id="a" href="https://www.facebook.com/profile.php?id=100087936281420&sk=map">
-                <li class="navelements"><img class="data" src="fb.jpg" alt=""></li>
-            </a>
-            <a id="a" href="pokharelrojit45@gmail.com">
-                <li class="navelements"><img class="data" src="mail.jpg" alt=""></li>
-            </a>
-        </footer>
-</body>
+#profile {
+    background-color: lightgrey;
+    font-size: larger;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 
+.navelements {
+    display: inline;
+    background-color: lightgrey;
+}
 
-</html>
+.navbutton {
+    transition-duration: 0.4s;
+    cursor: pointer;
+    padding: 10px;
+    width: 120px;
+    border: 5px solid rgb(219, 216, 216);
+    background-color: white;
+}
+
+.navbutton:hover {
+    background-color: lightblue;
+    color: white;
+}
+
+.mainimg {
+    height: 500px;
+    margin-top: 40px;
+    border-radius: 5px;
+    border-top-right-radius: 30%;
+}
+
+.content {
+    width: 100%;
+    display: inline-flex;
+}
+#column1{
+    width: 50%;
+}
+#column2{
+    width:50%;
+    
+}
+
+.jimmy {
+    background-color: lightgrey;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    display: inline;
+    height: 0px;
+    padding: 14px;
+}
+
+#jimmy{
+    text-align: left;
+    }
+
+.data {
+    border-radius: 50%;
+    background-color: lightgrey;
+    width: 30px;
+}
+
+.habbit {
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    display: block;
+}
+
+footer {
+    padding: 3px;
+    background-color: lightgrey;
+    border: 2px solid lightgrey;
+    width: 100%;
+    height: 50px;
+    margin-left: -10px;
+    margin-bottom: -10px;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    text-align: center;
+}
+
+.tables {
+    width: 90%;
+    margin-left: 40px;
+}
+
+#table {
+    display: inline;
+    padding: 3px;
+    margin-left: 90px;
+}
+
+.th {
+    text-align: left;
+    border-bottom: 1px solid lightgrey;
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+    border-top: 1px solid lightgrey;
+}
+
+.sub {
+    border: none;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.td {
+    border-bottom: 1px solid lightgrey;
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+}
+
+.form {
+    border: 2px solid lightgrey;
+    margin-left: 5%;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+form {
+    text-align: left;
+}
+
+#form {
+    text-align: right;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    margin-right: 4px;
+}
+
+input {
+    border: 2px solid grey;
+    height: 30px;
+    display: inline-block;
+}
+
+textarea {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid grey;
+    height: 200px;
+    width: 50%;
+}
+
+#a {
+    background-color: lightgrey;
+}
