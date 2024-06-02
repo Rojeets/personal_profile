@@ -11,6 +11,15 @@
             background-color: whitesmoke;
 
         }
+        body{
+            display: block;
+        }
+
+        #profile {
+            background-color: lightgrey;
+            font-size: larger;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
 
         .navbar {
             display: inline-block;
@@ -23,12 +32,12 @@
             border-top-right-radius: 9px;
         }
 
-        .li {
-            display: inline;
+        .navelements {
+            display: inline-block;
             background-color: lightgrey;
         }
 
-        .nav {
+        .navbutton {
             transition-duration: 0.4s;
             cursor: pointer;
             padding: 10px;
@@ -37,37 +46,24 @@
             background-color: white;
         }
 
-        .nav:hover {
+        .navbutton:hover {
             background-color: lightblue;
             color: white;
         }
 
-        #profile {
-            background-color: lightgrey;
-            font-size: larger;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        }
-
-        .img {
+        .mainimg {
             height: 500px;
             margin-top: 40px;
             border-radius: 5px;
             border-top-right-radius: 80px;
         }
 
-        .body {
+        .content {
             padding: 3px;
             display: inline-flex;
         }
 
-        #text {
-            margin-top: 40px;
-            margin-left: 30px;
-            margin-bottom: 100px;
-        }
-
         .jimmy {
-            margin-bottom: 10px;
             background-color: lightgrey;
             border: 1px solid lightgrey;
             border-radius: 4px;
@@ -77,17 +73,16 @@
         }
 
         .data {
-            margin-bottom:10px;
             border-radius: 50%;
             background-color: lightgrey;
             width: 30px;
         }
 
         .habbit {
-            display: block;
             margin-top: 10px;
             margin-left: 30px;
             margin-bottom: 30px;
+            display: block;
         }
 
         footer {
@@ -177,37 +172,42 @@
 
 <body>
     <div class="navbar">
-        <li type="none" id="profile" class="li">PROFILE</li>
-        <li class="li"><button class="nav" style=" margin-left: 30%; border-top-left-radius: 9px;">Home</button></li>
-        <li class="li"><button class="nav">About</button></li>
-        <li class="li"><button class="nav">contact</button></li>
-        <li class="li"><button class="nav" style="border-bottom-right-radius: 9px;">Help</button></li>
+        <li type="none" id="profile" class="navelements">PROFILE</li>
+        <li class="navelements"><button class="navbutton">Home</button></li>
+        <li class="navelements"><button class="navbutton">About</button></li>
+        <li class="navelements"><button class="navbutton">contact</button></li>
+        <li class="navelements"><button class="navbutton" style="border-bottom-right-radius: 9px;">Help</button></li>
 
     </div>
-    <div class="body">
-        <div id="body">
-            <img class="img" src="project.jpg" alt="">
+    <div class="content">
+        <div id="column1">
+            <img class="mainimg" src="project.jpg" alt="">
             <h1 style="margin-top: -8px;">ROJIT POKHAREL</h1>
             <h3 id="address">Dolakha,Nepal</h3>
             <div class="habbit">
-                        <div class="jimmy"><img src="jimmy.jpg" alt="" class="data">Dog lover <3 </div>
-                        <div class="jimmy"><img src="temple.jpg" alt="" class="data">Religious</div> <br>
-                        <div class="jimmy"><img src="nature.jpg" alt="" class="data">Nature </div>
-                        <div class="jimmy"><img src="motoheart.jpg" alt="Motohearted.jpg" class="data">Motohearted</div><br>
-                        <div class="jimmy"><img src="swan.jpg" alt="" class="data">Explorer</div>
-                </div>
+                <div class="jimmy"><img src="jimmy.jpg" alt="" class="data">Dog lover <3 </div>
+                <div class="jimmy"><img src="temple.jpg" alt="" class="data">Religious</div>
+                <div class="jimmy"><img src="nature.jpg" alt="" class="data">Nature </div>
+                <div class="jimmy"><img src="motoheart.jpg" alt="Motohearted.jpg" class="data">Motohearted</div>
+                <div class="jimmy"><img src="swan.jpg" alt="" class="data">Explorer</div>
             </div>
-            <div id="text">
-                <br>
+        </div>
+        <div id="column2">
+            <br>
+            <div id="about_me">
                 <h2 id="profile">ABOUT ME</h2>
-                <p>Hi, I am Rojit Pokharel from Dolakha, Nepal.
+                <p>
+                    Hi, I am Rojit Pokharel from Dolakha, Nepal.
                     I have been student of Computer Science in High school .
                     I am interested in web development and machine learning.
                     I am a beginner in programming and trying to learn new things every day.
 
                 </p>
+            </div>
+            
+            <div id="THINGS I LIKE">
                 <h2 id="profile">THINGS I LIKE</h2>
-                <ul id="things">
+                <ul >
                     <li>Learning rather than studying.</li>
                     <li>Exploring rather than researching.</li>
                     <li>Listening rather than talking.</li>
@@ -215,37 +215,30 @@
                     <li>Skilled rather than educated.</li>
                     <li>Soft music, Dark room, Deem light. </li>
                     <li>Black getup, Classic and Humble behaviour, Simplicity.</li>
-                    <li>Living things including
-                        microbes to wildlife.
-                    </li>
+                    <li>Living things including microbes to wildlife.</li>
                 </ul>
+            </div>
+            <div id="hobbies">
                 <h2 id="profile">HOBBIES</h2>
-                <ul id="hobbies">
+                <ul>
                     <li>Exploring, Learning, Traveling, Adventure</li>
                     <li> To be Managed and Passionated.</li>
                     <li>To be known by works.</li>
                     <li>To be Inspiration.</li>
                 </ul>
+            </div>
+            <div id="what_i_need_to_know">
                 <h2 id="profile">WHAT I NEED TO KNOW</h2>
-                <ul id="what_i_know">
-                    <li>
-                        HTML, CSS, JavaScript, PHP, SQL, Python, Java, C++, C#.
-                    </li>
-                    <li>
-                        Web development, Machine learning, Data analysis, Data visualization.
-                    </li>
-                    <li>
-                        Operating System, Networking, Database management system.
-                    </li>
-                    <li>
-                        Problem solving, Algorithm, Data structure.
-                    </li>
-                    <li>
-                        Git, GitHub, Visual Studio Code, Sublime Text, Atom.
-                    </li>
+                <ul>
+                    <li>HTML, CSS, JavaScript, PHP, SQL, Python, Java, C++, C#.</li>
+                    <li>Web development, Machine learning, Data analysis, Data visualization.</li>
+                    <li>Operating System, Networking, Database management system.</li>
+                    <li>Problem solving, Algorithm, Data structure.</li>
+                    <li> Git, GitHub, Visual Studio Code, Sublime Text, Atom.</li>
 
                 </ul>
             </div>
+        </div>
         </div>
         <hr>
         <div class="tables">
@@ -337,13 +330,13 @@
 
         <footer>
             <a id="a" href="">
-                <li class="li"><img class="data" src="insta.jpg" alt=""></li>
+                <li class="navelements"><img class="data" src="insta.jpg" alt=""></li>
             </a>
             <a id="a" href="https://www.facebook.com/profile.php?id=100087936281420&sk=map">
-                <li class="li"><img class="data" src="fb.jpg" alt=""></li>
+                <li class="navelements"><img class="data" src="fb.jpg" alt=""></li>
             </a>
             <a id="a" href="pokharelrojit45@gmail.com">
-                <li class="li"><img class="data" src="mail.jpg" alt=""></li>
+                <li class="navelements"><img class="data" src="mail.jpg" alt=""></li>
             </a>
         </footer>
 </body>
