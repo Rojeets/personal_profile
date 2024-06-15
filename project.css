@@ -72,21 +72,34 @@ body{
     padding: 14px;
 }
 
+
+.jimmy {
+    background-color: lightgrey;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    display: inline;
+    height: 0px;
+    padding: 14px;
+}
+
 #jimmy{
     text-align: left;
+    padding: 5px;
     }
 
 .data {
     border-radius: 50%;
     background-color: lightgrey;
     width: 30px;
+    padding: 10px;
 }
 
 .habbit {
     margin-top: 10px;
     margin-left: 30px;
     margin-bottom: 30px;
-    display: block;
+    display: block; 
+    padding: 10px;
 }
 
 footer {
