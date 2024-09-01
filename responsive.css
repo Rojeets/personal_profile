@@ -1,0 +1,138 @@
+/* General Mobile Styles */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+        text-align: center;
+        border-radius: 0;
+        border: none;
+    }
+
+    .navbutton {
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .navbutton:hover {
+        background-color: lightblue;
+        color: white;
+    }
+
+    .mainimg {
+        height: auto;
+        width: 100%;
+        margin-top: 20px;
+        border-radius: 0;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #column1, #column2 {
+        width: 100%;
+    }
+
+    .habbit {
+        margin: 10px auto;
+        padding: 10px;
+        width: 90%;
+    }
+
+    .tables {
+        width: 100%;
+        margin: auto;
+    }
+
+    #table {
+        margin: 10px auto;
+        display: block;
+    }
+
+    .th, .td {
+        text-align: center;
+    }
+
+    .form {
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    footer {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .data {
+        width: 25px;
+        padding: 8px;
+    }
+}
+
+/* General Tablet Styles */
+@media (max-width: 1024px) {
+    .content {
+        flex-direction: column;
+    }
+
+    #column1, #column2 {
+        width: 100%;
+    }
+
+    .tables {
+        width: 100%;
+    }
+
+    #table {
+        margin: 10px auto;
+    }
+
+    .th, .td {
+        text-align: center;
+    }
+}
+
+/* Default styles for larger screens */
+
+/* Styles for smaller screens */
+@media only screen and (max-width: 767px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: lightgrey;
+        border-top: 2px solid lightgrey;
+        z-index: 1; /* Ensure menu appears on top */
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .navtoggle {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        padding: 10px;
+        background-color: lightgrey;
+    }
+
+    .line {
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        margin: 3px 0;
+        border-radius: 2px;
+    }
+}
