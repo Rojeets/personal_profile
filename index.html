@@ -2,148 +2,164 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" href="project.jpg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="rojit, rojitpokharel, rojit pokharel, frontend, developer">
     <title>Rojit Pokharel</title>
+    <link rel="icon" href="project.jpg">
     <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
-    <div class="navbar">
-            <link rel="icon" href="project.jpg">
-        <li type="none" id="profile" class="navelements">PROFILE</li>
-        <li class="navelements"><button class="navbutton">Home</button></li>
-        <li class="navelements"><button class="navbutton">About</button></li>
-        <li class="navelements"><button class="navbutton">contact</button></li>
-        <li class="navelements"><button class="navbutton" style="border-bottom-right-radius: 9px;">Help</button></li>
-
+    <div class="navtoggle" id="navtoggle">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
     </div>
+    <nav class="navbar">
+        <ul class="nav-menu" id="nav-menu">
+            <li id="profile" class="navelements">PROFILE</li>
+            <li class="navelements"><button class="navbutton">Home</button></li>
+            <li class="navelements"><button class="navbutton">About</button></li>
+            <li class="navelements"><button href="#form" class="navbutton">Contact</button></li>
+            <li class="navelements"><button class="navbutton" style="border-bottom-right-radius: 9px;">Help</button></li>
+        </ul>
+    </nav>
     <div class="content">
         <div id="column1">
-            <img class="mainimg" src="project.jpg" alt="">
+            <img class="mainimg" src="project.jpg" alt="Profile picture of Rojit Pokharel">
             <h1 style="margin-top: -8px;">ROJIT POKHAREL</h1>
-            <h3 id="address">Dolakha,Nepal</h3>
+            <h3 id="address">Dolakha, Nepal</h3>
             <div class="habbit">
                 <table id="jimmy">
                     <tr>
-                        <th><div class="jimmy"><img src="jimmy.jpg" alt="" class="data">Dog lover <3 </div></th>
-                        <th><div class="jimmy"><img src="motoheart.jpg" alt="" class="data">Motohearted</div></th>
+                        <th><div class="jimmy"><img src="jimmy.jpg" alt="Dog" class="data">Dog lover <3 </div></th>
+                        <th><div class="jimmy"><img src="motoheart.jpg" alt="Motoheart" class="data">Motohearted</div></th>
                     </tr>
                     <tr>
-                        <th><div class="jimmy"><img src="swan.jpg" alt="" class="data">Explorer</div></th>
-                        <th><div class="jimmy"><img src="temple.jpg" alt="" class="data">Religious</div></th>
+                        <th><div class="jimmy"><img src="swan.jpg" alt="Explorer" class="data">Explorer</div></th>
+                        <th><div class="jimmy"><img src="temple.jpg" alt="Religious" class="data">Religious</div></th>
                     </tr>
                     <tr>
-                        <th><div class="jimmy"><img src="nature.jpg" alt="" class="data">Nature </div></th>
+                        <th><div class="jimmy"><img src="nature.jpg" alt="Nature" class="data">Nature</div></th>
                     </tr> 
                 </table>
             </div>
         </div>
         <div id="column2">
-            <br>
             <div id="about_me">
                 <h2 id="profile">ABOUT ME</h2>
                 <p>
                     Hi, I am Rojit Pokharel from Dolakha, Nepal. 
-                    I have been student of Computer Science in High school .
+                    I have been a student of Computer Science in high school.
                     I am interested in web development and machine learning.
                     I am a beginner in programming and trying to learn new things every day.
-
                 </p>
             </div>
             
-            <div id="THINGS I LIKE">
+            <div id="things_i_like">
                 <h2 id="profile">THINGS I LIKE</h2>
-                <ul >
+                <ul>
                     <li>Learning rather than studying.</li>
                     <li>Exploring rather than researching.</li>
                     <li>Listening rather than talking.</li>
-                    <li>Wise rather than knowledged.</li>
+                    <li>Wise rather than knowledgeable.</li>
                     <li>Skilled rather than educated.</li>
-                    <li>Soft music, Dark room, Deem light. </li>
-                    <li>Black getup, Classic and Humble behaviour, Simplicity.</li>
+                    <li>Soft music, dark room, dim light.</li>
+                    <li>Black getup, classic and humble behavior, simplicity.</li>
                     <li>Living things including microbes to wildlife.</li>
                 </ul>
             </div>
             <div id="hobbies">
                 <h2 id="profile">HOBBIES</h2>
                 <ul>
-                    <li >Exploring, Learning, Traveling, Adventure</li>
-                    <li> To be Managed and Passionated.</li>
+                    <li>Exploring, learning, traveling, adventure</li>
+                    <li>To be managed and passionate.</li>
                     <li>To be known by works.</li>
-                    <li>To be Inspiration.</li>
+                    <li>To be an inspiration.</li>
                 </ul>
             </div>
             <div id="what_i_need_to_know">
                 <h2 id="profile">WHAT I NEED TO KNOW</h2>
                 <ul>
                     <li>HTML, CSS, JavaScript, PHP, SQL, Python, Java, C++, C#.</li>
-                    <li>Web development, Machine learning, Data analysis, Data visualization.</li>
-                    <li>Operating System, Networking, Database management system.</li>
-                    <li>Problem solving, Algorithm, Data structure.</li>
-                    <li> Git, GitHub, Visual Studio Code, Sublime Text, Atom.</li>
-
+                    <li>Web development, machine learning, data analysis, data visualization.</li>
+                    <li>Operating systems, networking, database management systems.</li>
+                    <li>Problem solving, algorithms, data structures.</li>
+                    <li>Git, GitHub, Visual Studio Code, Sublime Text, Atom.</li>
                 </ul>
             </div>
         </div>
-        </div>
-        <hr>
-        <div class="tables">
-            <table id="table">
-                <th class="sub">
-                    EDUCATION
-                </th>
+    </div>
+    <hr>
+    <div class="tables">
+        <table class="table">
+            <caption class="sub">EDUCATION</caption>
+            <thead>
                 <tr>
-                    <th class="th">level</th>
+                    <th class="th">Level</th>
                     <th class="th">Year</th>
                 </tr>
+            </thead>
+            <tbody>
                 <tr>
                     <td class="td">SEE</td>
                     <td class="td">2022</td>
                 </tr>
                 <tr>
-                    <td class="td">Higher <br>Secondary</td>
+                    <td class="td">Higher Secondary</td>
                     <td class="td">2024</td>
                 </tr>
-            </table>
-            <table id="table">
-                <th class="sub">BOOKS</th>
+            </tbody>
+        </table>
+        <table class="table">
+            <caption class="sub">BOOKS</caption>
+            <thead>
                 <tr>
                     <th class="th">Name</th>
                     <th class="th">Author</th>
                 </tr>
+            </thead>
+            <tbody>
                 <tr>
                     <td class="td">Muna Madan</td>
-                    <td class="td">Laxmi Prasad <br>Devkota</td>
+                    <td class="td">Laxmi Prasad Devkota</td>
                 </tr>
                 <tr>
-                    <td class="td">The <br> Alchemist</td>
+                    <td class="td">The Alchemist</td>
                     <td class="td">Paulo Coelho</td>
                 </tr>
-            </table>
-            <table id="table">
-                <th class="sub">SPORTS</th>
+            </tbody>
+        </table>
+        <table class="table">
+            <caption class="sub">SPORTS</caption>
+            <thead>
                 <tr>
                     <th class="th">Game</th>
                     <th class="th">Player</th>
                 </tr>
+            </thead>
+            <tbody>
                 <tr>
                     <td class="td">Football</td>
-                    <td class="td">Neymar .Jr</td>
+                    <td class="td">Neymar Jr.</td>
                 </tr>
                 <tr>
                     <td class="td">Cricket</td>
-                    <td class="td">Sachin <br>Tendulkar</td>
+                    <td class="td">Sachin Tendulkar</td>
                 </tr>
-            </table>
-            <table id="table">
-                <th class="sub">PLACES</th>
+            </tbody>
+        </table>
+        <table class="table">
+            <caption class="sub">PLACES</caption>
+            <thead>
                 <tr>
                     <th class="th">Place</th>
                     <th class="th">District</th>
                 </tr>
+            </thead>
+            <tbody>
                 <tr>
                     <td class="td">Sauraha</td>
                     <td class="td">Chitwan</td>
@@ -152,41 +168,44 @@
                     <td class="td">Kalinchowk</td>
                     <td class="td">Dolakha</td>
                 </tr>
-            </table>
-        </div>
-        <div class="form">
-            <form>
-                <h2>REVIEW/MESSAGE</h2>
-                <input type="text" name="name" placeholder="Name">
-                <input type="email" name="email" placeholder="Email"><br><br>
-                <textarea name="message" placeholder="Messages">
-                </textarea><br>
-                <br>
-                <button type="submit">Submit</button>
-            </form>
-            <ul id="form" type="none">
-                <li type="none"><a href="">Roj Eet</a> </li>
-                <li type="none">
-                    <a href="">+977-9844070204</a>
-                </li>
-                <li >
-                    <a href="">pokharelrojit45@gmail.com </a>
-                </li>
-            </ul>
-        </div>
+            </tbody>
+        </table>
+    </div>
+    <div class="form" id="form">
+        <form>
+            <h2>REVIEW/MESSAGE</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email"><br><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Messages"></textarea><br><br>
+            <button type="submit">Submit</button>
+        </form>
+        <ul class="contact-info">
+            <li type="none"><a href="#">Roj Eet</a></li>
+            <li type="none"><a href="#">+977-9844070204</a></li>
+            <li type="none"><a href="mailto:pokharelrojit45@gmail.com">pokharelrojit45@gmail.com</a></li>
+        </ul>
+    </div>
 
-        <footer>
-            <a id="a" href="">
-                <li class="navelements" ><img class="data" src="insta.jpg" alt=""></li>
+    <footer>
+        <div class="social-media-links">
+            <a href="#"><img class="data" src="insta.jpg" alt="Instagram"></a>
+            <a href="https://www.facebook.com/profile.php?id=100087936281420&sk=map">
+                <img class="data" src="fb.jpg" alt="Facebook">
             </a>
-            <a id="a" href="https://www.facebook.com/profile.php?id=100087936281420&sk=map">
-                <li class="navelements" ><img class="data" src="fb.jpg" alt=""></li>
+            <a href="mailto:pokharelrojit45@gmail.com">
+                <img class="data" src="mail.jpg" alt="Email">
             </a>
-            <a id="a" href="pokharelrojit45@gmail.com">
-                <li class="navelements" ><img class="data" src="mail.jpg" alt=""></li>
-            </a>
-        </footer>
+        </div>
+        <div class="footer-text">
+            <p>© <span id="year"></span> Rojit Pokharel. All rights reserved.</p>
+        </div>
+    </footer>
+    
+
+    <script src="script.js"></script>
 </body>
-
 
 </html>
