@@ -5,10 +5,17 @@
 }
 body{
     display: block;
+    margin: none
+    ;
+}
+.navbar{
+    margin: 0%;
+}
+.navtoggle{
+    display: none;
 }
 
-
-.navbar {
+.navbar #nav-menu{
     text-align: center;
     padding: 3px;
     background-color: lightgrey;
@@ -118,6 +125,7 @@ footer {
 .tables {
     width: 90%;
     margin-left: 40px;
+    display: flex;
 }
 
 #table {
@@ -184,3 +192,37 @@ textarea {
 #a {
     background-color: lightgrey;
 }
+
+footer {
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: lightgrey;
+    margin: none;
+}
+
+footer .social-media-links {
+    margin-bottom: 10px;
+    background-color: lightgrey;
+    color: lightgrey;
+}
+
+footer .social-media-links a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+footer .footer-text p {
+    font-size: 14px;
+    color: #000;
+    background-color: lightgrey;
+}
+
+footer .data {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
